@@ -27,7 +27,7 @@ var ENV = {
 // 	set application default's for page generation
 //	Page will use this as the default contents for <head></head> unless overwritten with Page.header
 const _headerDef = `<meta name = "viewport" content = "width=device-width,initial-scale=1"/>
-	<link rel="icon" type="image/x-icon" href="https://blaineharper.com/assets/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="https://parking.indianhills.edu/favicon.ico">
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://parking.indianhills.edu/stylesheets/bs.add.css">
@@ -122,7 +122,7 @@ app.get('/developer', async c => {
 app.get('/projects', async c => {
 	const page = new Page({
 		pageTitle: 'Projects', headerOverwrite: _headerDef + applyCSSTheme('blue'),
-		body: `If you'd like to view our other projects, check out my <a href="https://github.com/Indian-Hills-Community-College">GitHub</a>!`
+		body: `If you'd like to view our other projects, check out our <a href="https://github.com/Indian-Hills-Community-College">GitHub</a>!`
 	})
 	return rawHtmlResponse(page.render())
 })
