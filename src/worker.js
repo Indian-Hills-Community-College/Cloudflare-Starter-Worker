@@ -106,7 +106,7 @@ app.get('/', async c => {
 		page_title: 'Home',
 		headerOverwrite: _headerDef + applyCSSTheme('red'),
 		body: `<div class="p-3 text-center"><h2>Hello World!</h2<</div><br>
-				<img class="p-3 mx-auto d-block rounded" src="https://www.indianhills.edu/favicon.ico" style="max-width:100%; max-height: 25rem">`
+				<img class="p-3 mx-auto d-block rounded" src="https://parking.indianhills.edu/favicon.ico" style="max-width:100%; max-height: 25rem">`
 	})
 	return rawHtmlResponse(page.render())
 })
